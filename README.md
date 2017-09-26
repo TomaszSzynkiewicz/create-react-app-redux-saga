@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+Project uses [redux](http://redux.js.org/) and [redux-saga](https://github.com/redux-saga/redux-saga) for managing side effects.
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
@@ -129,12 +131,29 @@ my-app/
     index.html
     favicon.ico
   src/
-    App.css
-    App.js
-    App.test.js
+    actions/
+      exampleActions.js
+      index.js
+    api/
+      apiMock.js
+    
+    components/
+      HelloWorld/
+        HelloWorld.js
+      App.css
+      App.js
+      App.test.js
+    reducers/
+      exampleReducer.js
+      index.js
+    sagas/
+      exampleSaga.js
+      index.js
     index.css
     index.js
-    logo.svg
+    static/
+      images/
+        logo.svg
 ```
 
 For the project to build, **these files must exist with exact filenames**:
